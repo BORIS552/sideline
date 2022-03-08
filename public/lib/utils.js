@@ -381,6 +381,16 @@ const getActiveFontStyle = (activeSelection, styleName) => {
 }
 
 
+const setActiveTextValue = (activeSelection, value) => {
+  if (activeSelection.setSelectionStyles && activeSelection.isEditing) {
+    console.log(value);
+    activeSelection.setText(value);
+   // activeSelection.setCoords()
+  } else {
+    activeSelection.set(value)
+  }
+}
+
 const setActiveFontStyle = (activeSelection, styleName, value) => {
   if (activeSelection.setSelectionStyles && activeSelection.isEditing) {
     let style = {}

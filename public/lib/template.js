@@ -20,3 +20,10 @@ function templateThree() {
    localStorage.setItem("selected_template", "3");
    window.location.reload();
 }
+
+// function templateFour() {
+//     console.log("Template Four");
+//     selected_template = 4;
+//    localStorage.setItem("selected_template", "4");
+//    window.location.reload();
+// }

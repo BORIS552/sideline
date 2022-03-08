@@ -65,6 +65,10 @@
         {
           var template_one = JSON.parse(template_4);
         }
+        // if(selected_tempalte === '4')
+        // {
+        //   var template_one = JSON.parse(template_6);
+        // }
         
         
         
