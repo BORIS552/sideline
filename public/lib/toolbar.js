@@ -100,12 +100,12 @@
           `<div class="floating-zoom-level-container"></div>`
         )
         $(`${this.containerSelector} .floating-zoom-level-container`).append(`
-          <label>Zoom</label>
+          <!-- <label>Zoom</label>
           <select id="input-zoom-level">
             ${[0.05, 0.1, 0.25, 0.5, 0.75, 1, 1.5, 2, 2.5, 3].map((item => 
               `<option value="${item}" ${item === currentZoomLevel ? 'selected':''}>${item*100}%</option>`
               ))}
-          </select>
+          </select> -->
         `);
         $(`${this.containerSelector} .floating-zoom-level-container #input-zoom-level`).change(function () {
           let zoom = parseFloat($(this).val());

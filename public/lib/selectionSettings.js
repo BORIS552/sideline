@@ -85,7 +85,7 @@
     (() => {
       $(`${this.containerSelector} .toolpanel#select-panel .content`).append(`
         <div class="text-section">
-          
+          <!--
           <h4>Font Style</h4>
           <div class="style">
             <button id="bold"><svg id="Capa_1" x="0px" y="0px" viewBox="-70 -70 450 450" xml:space="preserve"><path d="M218.133,144.853c20.587-14.4,35.2-37.653,35.2-59.52C253.333,37.227,216.107,0,168,0H34.667v298.667h150.187 c44.693,0,79.147-36.267,79.147-80.853C264,185.387,245.547,157.76,218.133,144.853z M98.667,53.333h64c17.707,0,32,14.293,32,32 s-14.293,32-32,32h-64V53.333z M173.333,245.333H98.667v-64h74.667c17.707,0,32,14.293,32,32S191.04,245.333,173.333,245.333z"></path></svg></button>
@@ -94,12 +94,12 @@
             <button id="linethrough"><svg id="Capa_1" x="0px" y="0px" viewBox="-70 -70 450 450" xml:space="preserve"><polygon points="149.333,160 234.667,160 234.667,96 341.333,96 341.333,32 42.667,32 42.667,96 149.333,96"></polygon><rect x="149.333" y="288" width="85.333" height="64"></rect><rect x="0" y="202.667" width="384" height="42.667"></rect></svg></button>
             <button id="subscript"><svg id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><path d="M248.257,256l103.986-103.758c2.777-2.771,4.337-6.532,4.337-10.455c0-3.923-1.561-7.684-4.337-10.455l-49.057-48.948 c-5.765-5.753-15.098-5.753-20.863,0L178.29,186.188L74.258,82.384c-5.764-5.751-15.098-5.752-20.863,0L4.337,131.333 C1.561,134.103,0,137.865,0,141.788c0,3.923,1.561,7.684,4.337,10.455L108.324,256L4.337,359.758 C1.561,362.528,0,366.29,0,370.212c0,3.923,1.561,7.684,4.337,10.455l49.057,48.948c5.765,5.753,15.098,5.753,20.863,0 l104.033-103.804l104.032,103.804c2.883,2.876,6.657,4.315,10.432,4.315s7.549-1.438,10.432-4.315l49.056-48.948 c2.777-2.771,4.337-6.532,4.337-10.455c0-3.923-1.561-7.684-4.337-10.455L248.257,256z"></path><path d="M497.231,384.331h-44.973l35.508-31.887c14.878-13.36,20.056-34.18,13.192-53.04 c-6.874-18.89-23.565-31.044-43.561-31.717c-0.639-0.021-1.283-0.032-1.928-0.032c-31.171,0-56.531,25.318-56.531,56.439 c0,8.157,6.613,14.769,14.769,14.769c8.156,0,14.769-6.613,14.769-14.769c0-14.833,12.109-26.901,26.992-26.901 c0.316,0,0.631,0.005,0.937,0.016c11.573,0.39,15.78,9.511,16.795,12.297c2.163,5.946,1.942,14.574-5.171,20.962l-64.19,57.643 c-4.552,4.088-6.112,10.56-3.923,16.273c2.189,5.714,7.673,9.486,13.792,9.486h83.523c8.157,0,14.769-6.613,14.769-14.769 S505.387,384.331,497.231,384.331z"></path></svg></button>
             <button id="superscript"><svg id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><path d="M248.257,259.854l103.986-103.758c2.777-2.771,4.337-6.532,4.337-10.455c0-3.923-1.561-7.684-4.337-10.455l-49.057-48.948 c-5.765-5.753-15.098-5.753-20.863,0L178.29,190.042L74.258,86.238c-5.764-5.751-15.099-5.752-20.863,0L4.337,135.187 C1.561,137.958,0,141.719,0,145.642s1.561,7.684,4.337,10.455l103.986,103.758L4.337,363.612C1.561,366.383,0,370.145,0,374.067 c0,3.922,1.561,7.684,4.337,10.455l49.057,48.948c5.765,5.753,15.098,5.753,20.863,0l104.033-103.804l104.032,103.804 c2.883,2.876,6.657,4.315,10.432,4.315s7.549-1.438,10.432-4.315l49.056-48.948c2.777-2.771,4.337-6.532,4.337-10.455 s-1.561-7.684-4.337-10.455L248.257,259.854z"></path><path d="M497.231,190.893h-44.973l35.508-31.887c14.878-13.36,20.056-34.18,13.192-53.04 c-6.874-18.89-23.565-31.044-43.561-31.717c-0.639-0.021-1.283-0.032-1.928-0.032c-31.171,0-56.531,25.318-56.531,56.439 c0,8.157,6.613,14.769,14.769,14.769c8.156,0,14.769-6.613,14.769-14.769c0-14.833,12.109-26.901,26.992-26.901 c0.316,0,0.631,0.005,0.937,0.016c11.573,0.39,15.78,9.511,16.795,12.297c2.163,5.946,1.942,14.574-5.171,20.962l-64.19,57.643 c-4.552,4.088-6.112,10.56-3.923,16.273c2.189,5.714,7.673,9.486,13.792,9.486h83.523c8.157,0,14.769-6.613,14.769-14.769 S505.387,190.893,497.231,190.893z"></path></svg></button>
-          </div>
+          </div> -->
           <div class="family">
-            <div class="input-container">
-            <input value="Text" id="current_textbox"/>
+            <div class="input-container" >
+            <input class="input-container" value="Text" id="current_textbox" style="width:100%"/>
             <br>
-            <label>Font Family</label>
+           <!-- <label>Font Family</label>
             <select id="font-family">
               <option value=""></option>
               <option value="'Open Sans', sans-serif">Open Sans</option>
@@ -113,10 +113,10 @@
               <option value="'Indie Flower', cursive">Indie Flower</option>
               <option value="'Amatic SC', cursive">Amatic SC</option>
               <option value="'Permanent Marker', cursive">Permanent Marker</option>
-            </select>
+            </select> -->
             </div>
           </div>
-          <div class="sizes">
+         <!-- <div class="sizes">
             <div class="input-container"><label>Font Size</label>
               <div class="custom-number-input">
               <button class="decrease">-</button>
@@ -139,8 +139,8 @@
               </div>
             </div>
             </p>
-          </div>
-          <div class="align">
+          </div> -->
+         <!--  <div class="align">
             <div class="input-container">
             <label>Text Alignment</label>
             <select id="text-align">
@@ -158,7 +158,7 @@
             </div>
           </div>
           <hr>
-        </div>
+        </div> -->
       `);
       $(`${this.containerSelector} .toolpanel#select-panel .style button`).click(function () {
         let type = $(this).attr('id');
@@ -202,12 +202,17 @@
       
       $(`${this.containerSelector} .toolpanel#select-panel .family #current_textbox`).change(function () {
         let value = $(this).val();
-          setActiveTextValue(this.activeSelection, value);
+        console.log("in selection");
+        console.log(value);
+          setActiveTextValue(_self.activeSelection, value);
         _self.canvas.renderAll(), _self.canvas.trigger('object:modified');
       })
 
       $(`${this.containerSelector} .toolpanel#select-panel .family #font-family`).change(function () {
         let family = $(this).val();
+        let value = $(this).val();
+        console.log("in selection");
+        console.log(value);
         setActiveFontStyle(_self.activeSelection, 'fontFamily', family)
         _self.canvas.renderAll(), _self.canvas.trigger('object:modified');
       })
@@ -242,7 +247,7 @@
     // border section
     (() => {
       $(`${this.containerSelector} .toolpanel#select-panel .content`).append(`
-        <div class="border-section">
+        <!-- <div class="border-section">
           <h4>Border</h4>
           <div class="input-container"><label>Width</label>
             <div class="custom-number-input">
@@ -255,7 +260,7 @@
           <div class="input-container"><label>Corner Type</label><select id="input-corner-type"><option value="miter" selected>Square</option><option value="round">Round</option></select></div>
           <div class="input-container"><label>Color</label><input id="color-picker" value="black"></div>
           <hr>
-        </div>
+        </div> -->
       `);
 
       $(`${this.containerSelector} .toolpanel#select-panel .border-section #color-picker`).spectrum({
@@ -435,11 +440,11 @@
         buttons += `<button data-pos="${item.pos}">${item.icon}</button>`
       })
       $(`${this.containerSelector} .toolpanel#select-panel .content`).append(`
-        <div class="alignment-section">
+        <!-- <div class="alignment-section">
           <h4>Alignment</h4>
           ${buttons}
           <hr>
-        </div>
+        </div> -->
       `);
 
       $(`${this.containerSelector} .toolpanel#select-panel .alignment-section button`).click(function () {
@@ -452,7 +457,7 @@
     // object options section
     (() => {
       $(`${this.containerSelector} .toolpanel#select-panel .content`).append(`
-        <div class="object-options">
+        <!-- <div class="object-options">
           <h4>Object Options</h4>
           <button id="flip-h"><svg width="512" height="512" enable-background="new 0 0 16 16" viewBox="0 0 16 20" xml:space="preserve"><g transform="matrix(0 1.5365 1.5385 0 -5.0769 1.5495)"><rect x="5" y="8" width="1" height="1"></rect><rect x="7" y="8" width="1" height="1"></rect><rect x="9" y="8" width="1" height="1"></rect><rect x="1" y="8" width="1" height="1"></rect><rect x="3" y="8" width="1" height="1"></rect><path d="M 1,2 5.5,6 10,2 Z M 7.37,3 5.5,4.662 3.63,3 Z"></path><polygon points="10 15 5.5 11 1 15"></polygon></g></svg></button>
           <button id="flip-v"><svg width="512" height="512" enable-background="new 0 0 16 16" viewBox="0 0 16 20" xml:space="preserve"><g transform="matrix(1.5365 0 0 1.5385 -.45052 -3.0769)"><rect x="5" y="8" width="1" height="1"></rect><rect x="7" y="8" width="1" height="1"></rect><rect x="9" y="8" width="1" height="1"></rect><rect x="1" y="8" width="1" height="1"></rect><rect x="3" y="8" width="1" height="1"></rect><path d="M 1,2 5.5,6 10,2 Z M 7.37,3 5.5,4.662 3.63,3 Z"></path><polygon points="5.5 11 1 15 10 15"></polygon></g></svg></button>
@@ -463,7 +468,7 @@
           <button id="group"><svg width="248" height="249" viewBox="0 0 248 249"><g><rect fill="none" id="canvas_background" height="251" width="250" y="-1" x="-1"></rect><g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid"><rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"></rect></g></g><g><rect id="svg_1" height="213.999997" width="213.999997" y="18.040149" x="16.8611" stroke-width="14" stroke="#000" fill="none"></rect><ellipse ry="39.5" rx="39.5" id="svg_2" cy="87.605177" cx="90.239139" stroke-opacity="null" stroke-width="5" stroke="#000" fill="#000000"></ellipse><rect id="svg_3" height="61.636373" width="61.636373" y="135.606293" x="133.750604" stroke-opacity="null" stroke-width="5" stroke="#000" fill="#000000"></rect><rect id="svg_4" height="26.016205" width="26.016205" y="4.813006" x="3.999997" stroke-opacity="null" stroke-width="8" stroke="#000" fill="#000000"></rect><rect id="svg_5" height="26.016205" width="26.016205" y="3.999999" x="217.820703" stroke-opacity="null" stroke-width="8" stroke="#000" fill="#000000"></rect><rect id="svg_7" height="26.016205" width="26.016205" y="218.633712" x="3.999997" stroke-opacity="null" stroke-width="8" stroke="#000" fill="#000000"></rect><rect id="svg_8" height="26.016205" width="26.016205" y="218.633712" x="217.820694" stroke-opacity="null" stroke-width="8" stroke="#000" fill="#000000"></rect></g></svg></button>
           <button id="ungroup"><svg width="247.99999999999997" height="248.99999999999997" viewBox="0 0 248 249"><g><rect fill="none" id="canvas_background" height="251" width="250" y="-1" x="-1"></rect><g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid"><rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"></rect></g></g><g><rect stroke-dasharray="20" id="svg_1" height="213.999997" width="213.999997" y="18.040149" x="16.8611" stroke-width="16" stroke="#000" fill="none"></rect><ellipse ry="39.5" rx="39.5" id="svg_2" cy="87.605177" cx="90.239139" stroke-opacity="null" stroke-width="5" stroke="#000" fill="#000000"></ellipse><rect id="svg_3" height="61.636373" width="61.636373" y="135.606293" x="133.750604" stroke-opacity="null" stroke-width="5" stroke="#000" fill="#000000"></rect></g></svg></button>
           <hr>
-        </div>
+        </div> -->
       `);
 
       $(`${this.containerSelector} .toolpanel#select-panel .object-options #flip-h`).click(() => {
@@ -531,7 +536,7 @@
     // effect section
     (() => {
       $(`${this.containerSelector} .toolpanel#select-panel .content`).append(`
-        <div class="effect-section">
+        <!-- <div class="effect-section">
           <h4>Effect</h4>
           <div class="input-container"><label>Opacity</label><input id="opacity" type="range" min="0" max="1" value="1" step="0.01"></div>
           <div class="input-container"><label>Blur</label><input class="effect" id="blur" type="range" min="0" max="100" value="50"></div>
@@ -542,7 +547,7 @@
           <div class="input-container"><label>Green</label><input class="effect" id="gamma.g" type="range" min="0" max="100" value="50"></div>
           <div class="input-container"><label>Blue</label><input class="effect" id="gamma.b" type="range" min="0" max="100" value="50"></div>
           <hr>
-        </div>
+        </div> -->
       `);
 
       $(`${this.containerSelector} .toolpanel#select-panel .effect-section #opacity`).change(function () {

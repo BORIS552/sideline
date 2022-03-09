@@ -382,13 +382,13 @@ const getActiveFontStyle = (activeSelection, styleName) => {
 
 
 const setActiveTextValue = (activeSelection, value) => {
-  if (activeSelection.setSelectionStyles && activeSelection.isEditing) {
+  console.log("in set active function");
+  
     console.log(value);
-    activeSelection.setText(value);
+    const iText = new fabric.IText(value, {"type":"textbox","version":"3.6.3","originX":"left","originY":"top","left":300.7,"top":481,"width":300.99,"height":43.93,"fill":"white","stroke":null,"strokeWidth":1,"strokeDashArray":null,"strokeLineCap":"butt","strokeDashOffset":0,"strokeLineJoin":"miter","strokeMiterLimit":4,"scaleX":1,"scaleY":2.27,"angle":0,"flipX":false,"flipY":false,"opacity":1,"shadow":null,"visible":true,"clipTo":null,"backgroundColor":"","fillRule":"nonzero","paintFirst":"fill","globalCompositeOperation":"source-over","transformMatrix":null,"skewX":0,"skewY":0,"text":`${value}`,"fontSize":18,"fontWeight":"normal","fontFamily":"Open Sans, sans-serif","fontStyle":"normal","lineHeight":1.16,"underline":false,"overline":false,"linethrough":false,"textAlign":"left","textBackgroundColor":"","charSpacing":0,"minWidth":20,"splitByGrapheme":false,"styles":{}});
+    activeSelection.set(iText);
    // activeSelection.setCoords()
-  } else {
-    activeSelection.set(value)
-  }
+  
 }
 
 const setActiveFontStyle = (activeSelection, styleName, value) => {
