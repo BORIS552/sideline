@@ -80,7 +80,7 @@
     }
 
     try {
-      this.containerEl.append(`<div class="toolbar" id="toolbar"><div class="main-buttons"></div><div class="extended-buttons"></div></div>`);
+      this.containerEl.append(`<div class="toolbar" id="toolbar" style="background-color:#FFBF00"><div class="main-buttons"></div><div class="extended-buttons"></div></div>`);
 
       // main buttons
       (() => {
