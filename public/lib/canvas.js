@@ -7,8 +7,8 @@
     try {
       $(`${this.containerSelector} .main-panel`).append(`<div class="canvas-holder" id="canvas-holder"><div class="content"><canvas id="c"></canvas></div></div>`);
       const fabricCanvas = new fabric.Canvas('c').setDimensions({
-        width: 1200,
-        height: 900
+        width: 900,
+        height: 1200
       })
 
 
