@@ -140,7 +140,7 @@
             </div>
             </p>
           </div> -->
-         <!--  <div class="align">
+         <!-- <div class="align">
             <div class="input-container">
             <label>Text Alignment</label>
             <select id="text-align">

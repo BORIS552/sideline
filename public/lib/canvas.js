@@ -77,7 +77,7 @@
         fabricCanvas.loadFromJSON(tem_value, fabricCanvas.renderAll.bind(fabricCanvas));
       }else {
         console.log("data from file");
-        var template_one = JSON.parse(template_1);
+        var template_one = JSON.parse(template_3);
         console.log(JSON.stringify(template_one));
         var tem_value = JSON.stringify(template_one);
         fabricCanvas.loadFromJSON(tem_value, fabricCanvas.renderAll.bind(fabricCanvas));
